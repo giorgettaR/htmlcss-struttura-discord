@@ -23,8 +23,12 @@ section .container >.row {
     width: 100%;
 }
 
+section .container .row >.column {
+    border: dashed black 2px;
+}
 
-/* STILE HEADER*/
+
+/* STYLE HEADER*/
 
 section.headup  {
     background-color: aqua;
@@ -81,9 +85,45 @@ section.headdown {
     height: 200px;
 }
 
-/* STILE MAIN */
+/* STYLE MAIN */
 
-/* STILE FOOTER */
+.main1 .row {
+
+}
+
+.main1 .row >*,
+.main2 .row >*,
+.main3 .row >* {
+    height: 200px;
+}
+
+section.main1,
+section.main3 {
+    background-color: white;
+}
+
+section.main2,
+section.main4 {
+    background-color: grey;
+}
+
+.sixty {
+    width: 60%;
+    background-color: rgb(0, 119, 255);
+}
+
+.forty {
+    width: 40%;
+    background-color: rosybrown;
+}
+
+.main4 .column {
+    background-color: green;
+    height: 400px;
+    width: 100%;
+}
+
+/* STYLE FOOTER */
 
 
 
@@ -99,6 +139,3 @@ section.headdown {
     min-width: 15px;
 }
 
-section .container .row >.column {
-    border: dashed black 2px;
-}

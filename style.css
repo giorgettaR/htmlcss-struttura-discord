@@ -6,17 +6,99 @@
     margin: 0;
 }
 
+/* GENERAL SETTINGS */
+
 .container {
     max-width: 1024px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
 }
 
-.column {
-    min-height: 200px;
+section >.container {
+    width: 900px;
 }
+
+section .container >.row {
+    width: 100%;
+}
+
+
+/* STILE HEADER*/
+
+section.headup  {
+    background-color: aqua;
+}
+
+.headup .row {
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.headup .row >.column {
+    background-color: yellowgreen;
+    height: 40px;
+    line-height: 40px;
+}
+
+.headup .logo,
+.headup .login {
+    width: 20%;
+}
+
+
+.headup .row >.nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    width: 60%;
+}
+
+.headup .nav >.column {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.headup .login {
+    text-align: end;
+}
+
+section.headdown {
+    background-color: blue;
+}
+
+.headdown .row {
+    justify-content: center;
+}
+
+.headdown .row .column{
+    background-color: blueviolet;
+    width: 70%;
+    height: 200px;
+}
+
+/* STILE MAIN */
+
+/* STILE FOOTER */
+
+
 
 /* DEBUG */
 
 .debug * {
     border: solid black 2px;
+    padding: 2px;
+}
+
+.column {
+    min-height: 1px;
+    min-width: 15px;
+}
+
+section .container .row >.column {
+    border: dashed black 2px;
 }

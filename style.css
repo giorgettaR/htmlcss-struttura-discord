@@ -17,6 +17,7 @@
 
 section >.container {
     width: 900px;
+    padding: 15px;
 }
 
 section .container >.row {
@@ -87,10 +88,6 @@ section.headdown {
 
 /* STYLE MAIN */
 
-.main1 .row {
-
-}
-
 .main1 .row >*,
 .main2 .row >*,
 .main3 .row >* {
@@ -105,6 +102,10 @@ section.main3 {
 section.main2,
 section.main4 {
     background-color: grey;
+}
+
+section.main2 .container {
+    flex-direction: row-reverse;
 }
 
 .sixty {
@@ -125,17 +126,43 @@ section.main4 {
 
 /* STYLE FOOTER */
 
-
-
-/* DEBUG */
-
-.debug * {
-    border: solid black 2px;
-    padding: 2px;
+footer {
+    background-color: rgba(0, 0, 0, 0.712);
 }
 
-.column {
-    min-height: 1px;
-    min-width: 15px;
+.footup .row  {
+    height: 180px;
 }
+
+.footup .add {
+    background-color: rosybrown;
+    width: 30%;
+}
+
+.footup .banner {
+    background-color: rgba(15, 168, 189, 0.678);
+    width: 70%;
+}
+
+.footup .banner .column {
+    width: 25%;
+    border: dashed white 2px;
+}
+
+.footdown .row {
+    background-color: beige;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footdown .logo,
+.footdown .button {
+    width: 15%;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
 
